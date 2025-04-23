@@ -67,6 +67,3 @@ Issues and pull requests are welcome. Let’s make VulnSentinel smarter together
 
 ---
 
-✅ Once you’ve pasted and committed that to your `README.md` file, let me know and I’ll guide you through creating the folders and files for `VulnSentinel`.
-
-
