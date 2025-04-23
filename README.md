@@ -26,37 +26,50 @@
 
 ## 📂 Project Structure
 
-vulnsentinel/ │ ├── app.py # Flask app entry point ├── parser/ │ └── log_parser.py # Log reading & pattern matching logic ├── templates/ │ └── dashboard.html # Frontend HTML for results ├── static/ │ └── style.css # Styling (Bootstrap or custom) ├── samples/ │ └── apache_log_sample.txt # Sample log file ├── requirements.txt # Dependencies └── README.md
+vulnsentinel/
+│
+├── app.py                  # Flask app entry point
+├── parser/
+│   └── log_parser.py       # Log reading & pattern matching logic
+├── templates/
+│   └── dashboard.html      # Frontend HTML for results
+├── static/
+│   └── style.css           # Styling (Bootstrap or custom)
+├── samples/
+│   └── apache_log_sample.txt  # Sample log file
+├── requirements.txt        # Dependencies
+└── README.md
+
 
 ---
 
 ## 🧪 How to Use
 
 1. **Clone the repository**
-```bash
+   
 git clone https://github.com/domino79/vulnsentinel.git
 cd vulnsentinel
 
+
 2. Create a virtual environment & install dependencies
+   
 python -m venv env
 source env/bin/activate  # or `env\\Scripts\\activate` on Windows
 pip install -r requirements.txt
 
 3. Run the Flask app
+   
 python app.py
 
 4. Visit the dashboard
+   
 http://127.0.0.1:5000
 
 Skills Demonstrated
 ✅ Certified Information Systems Auditor (CISA)
-
 ✅ (ISC)² Cybersecurity Techniques
-
 ✅ Python scripting for threat detection
-
 ✅ Flask web development
-
 ✅ Secure log analysis
 
 License
