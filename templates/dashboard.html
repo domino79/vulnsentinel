@@ -1,64 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>VulnSentinel Dashboard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 2rem;
-            background-color: #f5f5f5;
-        }
-        h1 {
-            color: #333;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #fff;
-        }
-        th, td {
-            padding: 12px;
-            border: 1px solid #ccc;
-            text-align: left;
-        }
-        th {
-            background-color: #333;
-            color: #fff;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        .alert {
-            color: red;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <h1>🛡️ VulnSentinel Threat Dashboard</h1>
-    {% if threats %}
-        <table>
-            <thead>
-                <tr>
-                    <th>Line Number</th>
-                    <th>Threat Type</th>
-                    <th>Log Entry</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for entry in threats %}
-                <tr>
-                    <td>{{ entry.line_number }}</td>
-                    <td class="alert">{{ entry.threat_type }}</td>
-                    <td>{{ entry.log_entry }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    {% else %}
-        <p>No threats detected in the log file.</p>
-    {% endif %}
-</body>
-</html>
+<form method="POST" enctype="multipart/form-data">
+    <label for="logfile">Upload log file (.txt or .log):</label><br><br>
+    <input type="file" name="logfile" required>
+    <button type="submit">Scan</button>
+</form>
 
+<hr>
